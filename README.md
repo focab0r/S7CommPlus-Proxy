@@ -1,6 +1,6 @@
 # S7CommPlus-Proxy #
 
-This proxy acts as a man-in-the-middle between TIA Portal and the Simatic S7-1200 PLC, intercepting the encrypted S7CommPlus traffic flowing between both endpoints. The proxy is able to decrypt the session keys negotiated during the connection handshake, exposing the communication payload in plaintext in real time, while remaining transparent to both parties. Decrypted communication will be saved in `decrypted.pcap`.
+This proxy acts as a man-in-the-middle between TIA Portal and the Simatic S7-1200 PLC, intercepting the encrypted S7CommPlus traffic flowing between both endpoints. The proxy is able to generates a fake connection handshake with the client/server, exposing the communication payload in plaintext in real time, while remaining transparent to both parties. Decrypted communication will be saved in `decrypted.pcap`.
 
 ## Configuration ##
 
