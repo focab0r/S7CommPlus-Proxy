@@ -10,9 +10,9 @@ import connection   # Connection variable
 parser = argparse.ArgumentParser()
 parser.add_argument("-si", "--serverIP", required=True, help="Server IP to which the proxy will forward the requests")
 parser.add_argument("-sp", "--serverPort", required=True, help="Server port to which the proxy will forward the requests")
-parser.add_argument("-ci", "--clientIP", required=True, help="Client IP in which the proxy will listen for connection")
-parser.add_argument("-li", "--listenIP", required=True, help="Listen IP of the proxy")
-parser.add_argument("-lp", "--listenPort", required=True, help="Listen port of the proxy")
+parser.add_argument("-ci", "--clientIP", required=True, help="Client IP")
+parser.add_argument("-li", "--listenIP", required=True, help="Listener IP of the proxy")
+parser.add_argument("-lp", "--listenPort", required=True, help="Listener port of the proxy")
 parser.add_argument("-ri", "--remoteIP", required=True, help="Sender IP of the proxy")
 
 args = parser.parse_args()
